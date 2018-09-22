@@ -11,7 +11,7 @@ export class CodigoQRComponent {
 
   constructor () {
     console.log('AppComponent running');
-    this.qrdata = 'MyUrl de registro';
+    this.qrdata = 'https://27a5826f.ngrok.io/register';
   }
 
   changeValue( newValue: string): void {
