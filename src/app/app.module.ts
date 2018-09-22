@@ -12,8 +12,9 @@ import { AdminComponent } from './admin/admin.component';
 import { CodigoQRComponent } from './codigo-qr/codigo-qr.component';
 
 const routes: Routes = [
-  { path: 'Inicio', component: InicioComponent },
-  { path: 'Admin', component: AdminComponent },
+  { path: 'inicio', component: InicioComponent },
+  { path: 'admin', component: AdminComponent },
+  { path: 'qr', component: CodigoQRComponent },
   { path: '', component: InicioComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '/', pathMatch: 'full' }
 ];
