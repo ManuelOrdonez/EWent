@@ -26,7 +26,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/canvasjs.min",
+              "src/assets/js/jquery.canvasjs.min"
+            ]
           },
           "configurations": {
             "production": {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
+import swal from 'sweetalert'
 
 @Component({
   selector: 'app-inicio',
@@ -35,9 +36,13 @@ export class InicioComponent implements OnInit {
       if (err) return;
       console.log('se ha registrado correctamente');
 
-      setTimeout(() => {
-        window.location.href = 'https://youtube.com'
-      }, 3000)
+      swal({
+        title: "Gracias por tu informacion",
+        text: "Serás redirigido a la url de regalo",
+        icon: "success"
+      }).then(() => {
+        window.location.href = 'https://www.youtube.com/watch?v=YXnjy5YlDwk'
+      })
     });
   }
 
